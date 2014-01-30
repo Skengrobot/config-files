@@ -1,4 +1,4 @@
 config-files
 ============
 
-configuration files of my favourite config files
+Configuration files that I use for my Linux setups.
