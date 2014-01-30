@@ -201,13 +201,23 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-C-A-Left">
+    <keybind key="S-A-Left">
       <action name="SendToDesktopLeft">
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-C-A-Right">
+    <keybind key="S-A-Right">
       <action name="SendToDesktopRight">
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Up">
+      <action name="SendToDesktopUp">
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Down">
+      <action name="SendToDesktopDown">
         <wrap>no</wrap>
       </action>
     </keybind>
@@ -275,7 +285,7 @@
         <desktop>yes</desktop>
       </action>
     </keybind>
-    <keybind key="C-A-f">
+    <keybind key="W-f">
       <action name="Execute">
         <command>thunar</command>
         <startupnotify>
@@ -284,7 +294,16 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-A-w">
+    <keybind key="W-C-w">
+      <action name="Execute">
+        <command>firefox</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Minefield Web Browser</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-w">
       <action name="Execute">
         <command>firefox</command>
         <startupnotify>
@@ -293,7 +312,7 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-A-l">
+    <keybind key="W-l">
       <action name="Execute">
         <command>xscreensaver-command --lock</command>
         <startupnotify>
@@ -302,7 +321,7 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-A-t">
+    <keybind key="W-t">
       <action name="Execute">
         <command>terminator</command>
         <startupnotify>
@@ -311,26 +330,100 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="W-Up">
-      <action name="Maximize"/>
+    <keybind key="W-q">
+      <action name="Execute">
+        <command>xkill</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Kill an application</name>
+        </startupnotify>
+      </action>
     </keybind>
-	<keybind key="W-Down">
-	  <action name="Unmaximize"/>
-	</keybind>
-	<keybind key="W-Left">
-	  <action name="Resize"><edge>left</edge></action>
-	</keybind>
-	<keybind key="W-Right">
-	  <action name="Resize"><edge>right</edge></action>
-	</keybind>
+    <keybind key="W-v">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>leafpad</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>leafpad</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-m">
+      <action name="Execute">
+        <command>vlc</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>Gnome Media Player</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>firefox /usr/share/ab/DOC.html</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>DOC</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>gmrun</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>run prompt</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-space">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="MoveToEdgeEast"/>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="MoveToEdgeNorth"/>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="MoveToEdgeWest"/>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="MoveToEdgeSouth"/>
+    </keybind>
+    <keybind key="W-h">
+      <action name="ToggleMaximizeHorz"/>
+    </keybind>
+    <keybind key="A-W-Up">
+      <action name="GrowToEdgeNorth"/>
+    </keybind>
+    <keybind key="A-W-Right">
+      <action name="GrowToEdgeEast"/>
+    </keybind>
+    <keybind key="A-W-Down">
+      <action name="GrowToEdgeSouth"/>
+    </keybind>
+    <keybind key="A-W-Left">
+      <action name="GrowToEdgeWest"/>
+    </keybind>
+    <keybind key="W-c">
+      <action name="MoveToCenter"/>
+    </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set Master 5%+ unmute</command>
+        <command>amixer set Master 1%+ unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>amixer set Master 1%- unmute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
